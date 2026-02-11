@@ -104,7 +104,7 @@ export default function InvoicePreview() {
 
         {/* Line Items Table */}
         <div className="mb-8 overflow-x-auto">
-          <table className="w-full min-w-[500px]">
+          <table className="w-full table-fixed">
             <thead>
               <tr className="border-b-2 border-gray-900">
                 <th className="text-left py-3 text-xs font-semibold text-gray-500 uppercase">
