@@ -11,9 +11,10 @@ import { Label } from '@/components/ui/label';
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
 import { Plus, X } from 'lucide-react';
+import TemplateSelector from './templateSelector';
 
 export default function InvoiceForm() {
-  const { user } = useAuth();
+  const { user, userData } = useAuth();
   const { 
     invoice, 
     setClient,
@@ -298,6 +299,8 @@ export default function InvoiceForm() {
           />
         </CardContent>
       </Card>
+
+      <TemplateSelector userPlan={userData?.plan || 'free'} />
     </div>
   );
 }

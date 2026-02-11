@@ -9,6 +9,7 @@ import { Button } from '@/components/ui/button';
 import { ArrowLeft, Save } from 'lucide-react';
 import Link from 'next/link';
 import InvoiceForm from '@/components/invoice/invoiceForm';
+import InvoicePreview from '@/components/invoice/invoicePreview';
 
 export default function NewInvoicePage() {
   const { user, userData } = useAuth();
@@ -71,9 +72,7 @@ export default function NewInvoicePage() {
 
         {/* Right: Live Preview */}
         <div className="lg:sticky lg:top-8 h-fit">
-          <div className="border rounded-lg p-8 bg-white">
-            <p className="text-gray-400 text-center">Live preview coming tomorrow!</p>
-          </div>
+          <InvoicePreview />
         </div>
       </div>
     </div>
