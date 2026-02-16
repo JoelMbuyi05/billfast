@@ -291,7 +291,7 @@ export default function PublicInvoicePage() {
             {/* Footer */}
             <div className="mt-12 pt-6 border-t border-gray-200 text-center">
               <p className="text-xs text-gray-400">
-                {businessInfo.plan === 'free' && 'Created with BillFast'}
+                {businessInfo.plan === 'free' && 'Created with InvoSnap'}
               </p>
             </div>
           </div>

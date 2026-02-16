@@ -210,7 +210,7 @@ export default function InvoicePreview() {
         {/* Footer */}
         <div className="mt-12 pt-6 border-t border-gray-200 text-center">
           <p className="text-xs text-gray-400">
-            {userData?.plan === 'free' && 'Created with BillFast'}
+            {userData?.plan === 'free' && 'Created with InvoSnap'}
           </p>
         </div>
       </div>

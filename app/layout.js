@@ -6,7 +6,7 @@ import { AuthProvider } from '@/lib/context/AuthContext';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
-  title: 'BillFast - Professional Invoices in 60 Seconds',
+  title: 'InvoSnap - Professional Invoices in 60 Seconds',
   description: 'Create and send beautiful invoices instantly',
 };
 

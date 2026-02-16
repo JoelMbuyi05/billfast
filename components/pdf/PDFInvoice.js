@@ -118,7 +118,7 @@ const styles = StyleSheet.create({
   }
 });
 
-export default function PDFInvoice({ invoice, businessInfo, showWatermark }) {
+export default function PDFInvoice({ invoice, businessInfo}) {
   return (
     <Document>
       <Page size="A4" style={styles.page}>
@@ -231,13 +231,6 @@ export default function PDFInvoice({ invoice, businessInfo, showWatermark }) {
           <View style={styles.notes}>
             <Text style={styles.sectionTitle}>Notes</Text>
             <Text>{invoice.notes}</Text>
-          </View>
-        )}
-
-        {/* Footer */}
-        {showWatermark && (
-          <View style={styles.footer}>
-            <Text>Created with BillFast</Text>
           </View>
         )}
       </Page>

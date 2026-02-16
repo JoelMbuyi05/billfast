@@ -178,11 +178,6 @@ export default function DashboardPage() {
       <div className="flex items-center justify-between mb-8">
         <div>
           <h1 className="text-3xl font-bold">Invoices</h1>
-          {userData?.plan === 'free' && (
-            <p className="text-sm text-gray-600 mt-1">
-              {userData?.invoicesThisMonth || 0}/5 invoices this month
-            </p>
-          )}
         </div>
         <Link href="/dashboard/invoices/new">
           <Button>
@@ -270,8 +265,7 @@ export default function DashboardPage() {
                         )}
                       </Button>
 
-                      {/* WhatsApp button with Pro check */}
-                      {userData?.plan === 'pro' ? (
+                      {/* WhatsApp button*/}
                         <Button 
                           variant="outline"
                           size="sm"
@@ -280,17 +274,6 @@ export default function DashboardPage() {
                           <MessageCircle className="mr-2 h-4 w-4" />
                           WhatsApp
                         </Button>
-                      ) : (
-                        <Button 
-                          variant="outline"
-                          size="sm"
-                          disabled
-                          title="Upgrade to Pro to share via WhatsApp"
-                        >
-                          <MessageCircle className="mr-2 h-4 w-4" />
-                          🔒 Pro
-                        </Button>
-                      )}
                     </>
                   ) : (
                     <>

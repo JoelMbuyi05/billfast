@@ -7,7 +7,7 @@ export default function HomePage() {
       {/* Navigation */}
       <nav className="flex items-center justify-between p-6 border-b">
         <div className="flex items-center gap-2">
-          <span className="font-bold text-xl">BillFast</span>
+          <span className="font-bold text-xl">InvoSnap</span>
         </div>
         <div className="flex gap-4">
           <Link href="/auth/login" className="text-gray-600 hover:text-gray-900">
@@ -29,7 +29,7 @@ export default function HomePage() {
           <span className="text-blue-600">in 60 Seconds</span>
         </h1>
         <p className="text-xl text-gray-600 mb-8 max-w-2xl">
-          BillFast helps small businesses create, send, and track invoices effortlessly. 
+          InvoSnap helps small businesses create, send, and track invoices effortlessly. 
           Get paid faster with automated reminders and online payments.
         </p>
         <div className="flex gap-4">
@@ -66,7 +66,7 @@ export default function HomePage() {
 
       {/* Footer */}
       <footer className="py-6 text-center text-gray-500 border-t">
-        <p>&copy; 2024 BillFast. All rights reserved.</p>
+        <p>&copy; 2024 InvoSnap. All rights reserved.</p>
       </footer>
     </div>
   );

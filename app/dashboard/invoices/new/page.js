@@ -50,12 +50,6 @@ export default function NewInvoicePage() {
       return;
     }
 
-    // Check free tier limit
-    if (userData?.plan === 'free' && (userData.invoicesThisMonth || 0) >= 5) {
-      alert('You\'ve reached the free tier limit of 5 invoices per month. Upgrade to Pro for unlimited invoices!');
-      return;
-    }
-
     try {
       setSaving(true);
       

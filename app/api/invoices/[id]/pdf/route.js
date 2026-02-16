@@ -57,7 +57,6 @@ export async function GET(request, { params }) {
       PDFInvoice({
         invoice,
         businessInfo,
-        showWatermark: businessInfo?.plan === 'free'
       })
     );
 

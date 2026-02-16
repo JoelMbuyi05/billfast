@@ -59,9 +59,6 @@ export default function ClientsPage() {
     }
   }
 
-  // Check if user hit free tier limit
-  const canAddClient = userData?.plan === 'pro' || (clients.length < 3);
-
   if (loading) {
     return <div>Loading clients...</div>;
   }
@@ -71,23 +68,13 @@ export default function ClientsPage() {
       <div className="flex items-center justify-between mb-8">
         <div>
           <h1 className="text-3xl font-bold">Clients</h1>
-          <p className="text-gray-600 mt-1">
-            {clients.length} {userData?.plan === 'free' && '/ 3'} clients
-          </p>
         </div>
-        
-        {canAddClient ? (
           <Link href="/dashboard/clients/new">
             <Button>
               <Plus className="mr-2 h-4 w-4" />
               Add Client
             </Button>
           </Link>
-        ) : (
-          <Button disabled>
-            Upgrade to add more clients
-          </Button>
-        )}
       </div>
 
       {clients.length === 0 ? (

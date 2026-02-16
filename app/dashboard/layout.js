@@ -45,7 +45,7 @@ export default function DashboardLayout({ children }) {
         <div className="p-6">
           <div className="flex items-center gap-2 mb-8">
             <Zap className="h-6 w-6 text-blue-600" />
-            <span className="font-bold text-xl">BillFast</span>
+            <span className="font-bold text-xl">InvoSnap</span>
           </div>
 
           <nav className="space-y-2">
@@ -68,18 +68,6 @@ export default function DashboardLayout({ children }) {
               </Button>
             </Link>
           </nav>
-
-          {userData?.plan === 'free' && (
-            <div className="mt-8 p-4 bg-blue-50 rounded-lg">
-              <p className="text-sm font-medium mb-2">Free Plan</p>
-              <p className="text-xs text-gray-600 mb-3">
-                {userData.invoicesThisMonth || 0}/5 invoices this month
-              </p>
-              <Button size="sm" className="w-full">
-                Upgrade to Pro
-              </Button>
-            </div>
-          )}
         </div>
 
         <div className="absolute bottom-0 left-0 right-0 p-6 border-t">
